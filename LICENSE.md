@@ -629,7 +629,7 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    Serializes and deserializes Borderlands 4 proprietary NCS files to and from JSON
+    Cross-platform NCS (Nexus Config Store) decoder/encoder library with a small CLI wrapper.
     Copyright (c) 2026 Cr4nkSt4r - https://github.com/Cr4nkSt4r/Borderlands-4.NcsParser
 
     This program is free software: you can redistribute it and/or modify
