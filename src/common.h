@@ -7,6 +7,6 @@
 #define _DEBUG
 #endif
 
+#include "ncs_parser.h"
 #include "utils/fs_utils.h"
 #include "utils/log.h"
-#include "oodle/oodle_api.h"
