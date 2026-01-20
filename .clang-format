@@ -1,0 +1,12 @@
+Language:                                   Cpp
+BasedOnStyle:                               Chromium
+
+AllowAllParametersOfDeclarationOnNextLine:  false
+AllowShortBlocksOnASingleLine:              Empty
+AlignAfterOpenBracket:                      BlockIndent
+BinPackParameters:                          false
+BreakBeforeBinaryOperators:                 NonAssignment
+ColumnLimit:                                100
+IndentWidth:                                4
+InsertBraces:                               true
+SortIncludes:                               CaseInsensitive
