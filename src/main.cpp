@@ -25,7 +25,16 @@ struct Settings {
 
 static void print_usage() {
     BL4_LOG_INFO(
-        "Usage: ncs_parser <file-or-dir> [--minimal] [--deps] [--strings] [--decomp] [--full] [--oodle <path>]"
+        "Usage:\n" \
+        "    ncs_parser <file-or-dir> [--minimal] [--deps] [--strings] [--decomp] [--full] [--oodle <path>] [--debug]\n\n" \
+        "Options:\n" \
+        "    First argument must be a file or directory\n" \
+        "    --minimal     strips metadata from JSON output and skips the table metadata .json generation\n" \
+        "    --deps keeps  __dep_entries in .json\n" \
+        "    --strings     keeps header/value strings in metadata .json\n" \
+        "    --decomp      writes .decomp payloads\n" \
+        "    --full        includes --deps --strings --decomp\n" \
+        "    --debug       enables extra logging\n"
     );
     BL4_LOG_INFO("[INFO] JSON inputs require a matching <name>_metadata.json file.");
 }
