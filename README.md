@@ -18,7 +18,7 @@ Cross-platform NCS (Nexus Config Store) decoder/encoder library with a small CLI
 ## Notes
 
 I wasn't able to properly refactor the code before release, there just wasn't any time to do so, and I've had 0 experience with Unreal Engine in general, please bear with me.  
-So big shoutout to @apple1417 & @apocalyptech for helping me out on any Unreal specifics.  
+Big shoutout to @apple1417 & @apocalyptech for helping me out on any Unreal specifics and SunBeam for making my journey start smooth.  
 There is still some testing and debugging code like `egbx_type`, `parse_oodle_compressor` and `mask` related things which are currently used even in Release builds, but that's subject to change.  
 The same is true for the [LICENSE](LICENSE.md), it's subject to change.  
 
@@ -190,7 +190,8 @@ auto rebuilt = parser.EncodeJsonToNcs(decoded.tables, decoded.metadata, encode_o
 
 ## Honorable mentions
 
-@apple1417 & @apocalyptech  For their general Unreal Engine help!
+@apple1417 & @apocalyptech  For their general Unreal Engine help!  
+SunBeam                     For a smooth start into the project!
 
 ## License
 
