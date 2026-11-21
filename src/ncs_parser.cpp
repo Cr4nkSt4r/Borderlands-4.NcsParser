@@ -343,6 +343,9 @@ static nlohmann::ordered_json build_metadata_block(
     if (decomp.header.reserved != 0) {
         meta["blobReserved"] = decomp.header.reserved;
     }
+    if (keep_strings && !decomp.strings.empty()) {
+        meta["headerStrings"] = decomp.strings;
+    }
 
     if (!type_table.header.type_codes.empty()) {
         nlohmann::ordered_json tch = nlohmann::ordered_json::object();
@@ -363,6 +366,10 @@ static nlohmann::ordered_json build_metadata_block(
     }
     if (type_table.value_strings_declared_count != 0) {
         meta["valueStringsDeclaredCount"] = type_table.value_strings_declared_count;
+    }
+    // Thanks to Phnx for making me aware of
+    if (keep_strings && !type_table.value_strings.empty()) {
+        meta["valueStrings"] = type_table.value_strings;
     }
 
     if (!type_table.tables.empty()) {
